@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuz Iluminación</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        /* Estilos existentes omitidos por brevedad */
+
+        /* Estilos para el botón de WhatsApp */
+        .whatsapp-bubble {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .whatsapp-bubble a {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366; /* Color de fondo de WhatsApp */
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .whatsapp-bubble a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .whatsapp-bubble img {
+            width: 50%;
+        }
+
+        /* Estilos para la sección de información de la empresa */
+        .company-info {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            color: #ffffff;
+        }
+
+        .company-info h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+        }
+
+        .company-info p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Estilos para la sección de videos pequeños */
+        .videos-small-section {
+            margin-top: 40px;
+        }
+
+        .videos-small-section h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+
+        .videos-small-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Ajusta automáticamente el número de columnas */
+            gap: 20px;
+        }
+
+        .video-small {
+            width: 100%; /* Para que ocupe todo el espacio disponible en la columna */
+        }
+
+        .video-small iframe {
+            width: 100%;
+            height: 180px; /* Nuevo tamaño para los videos pequeños */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="icono.jpeg" alt="Logo de Valuz Iluminación" class="logo">
+                <h1>Valuz Iluminación</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>      
+    <div class="container">
+        <!-- Sección de videos pequeños -->
+        <div class="videos-small-container">
+            <div class="video-small">
+                <img src="video1.gif" alt="GIF 1">
+            </div>
+            <div class="video-small">
+                <img src="gif2.gif" alt="GIF 2">
+            </div>
+            <div class="video-small">
+                <img src="video2.gif" alt="GIF 3">
+            </div>        
+            <!-- Agregar más GIFs aquí -->
+        </div>
+</section>
+<!-- Ventana Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="productDetails"></div>
+  </div>
+</div>
+
+<div class="container">
+  <main>
+    <section class="products-column" id="productsColumn">
+      <!-- Aquí van los productos -->
+            </div>
+        </section>
+        <main>
+            <section class="products-column">
+                <div class="product">
+                    <img src="producto.jpeg" alt="Producto 1">
+                    <h3>Lámpara de pie clásica</h3>
+                    <p>Precio: $99.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <!-- Agregar más productos aquí -->
+                <div class="product">
+                    <img src="producto10.jpg" alt="Producto 10">
+                    <h3>Lámpara colgante moderna</h3>
+                    <p>Precio: $129.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="producto11.jpg" alt="Producto 11">
+                    <h3>Aplique de pared vintage</h3>
+                    <p>Precio: $79.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+            </section>
+            <section class="products-column">
+                <div class="product">
+                    <img src="producto4.jpg" alt="Producto 4">
+                    <h3>Aplique de pared minimalista</h3>
+                    <p>Precio: $69.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <!-- Agregar más productos aquí -->
+                <div class="product">
+                    <img src="producto12.jpg" alt="Producto 12">
+                    <h3>Lámpara de techo industrial</h3>
+                    <p>Precio: $109.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="producto13.jpg" alt="Producto 13">
+                    <h3>Lámpara de pie elegante</h3>
+                    <p>Precio: $199.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+            </section>
+            <section class="products-column">
+                <div class="product">
+                    <img src="producto.jpg" alt="Producto 7">
+                    <h3>Lámpara de mesa contemporánea</h3>
+                    <p>Precio: $119.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <!-- Agregar más productos aquí -->
+                <div class="product">
+                    <img src="producto14.jpg" alt="Producto 14">
+                    <h3>Lámpara de pared clásica</h3>
+                    <p>Precio: $89.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="producto15.jpg" alt="Producto 15">
+                    <h3>Lámpara de techo minimalista</h3>
+                    <p>Precio: $149.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+            </section>
+        </main>
+        <!-- Barra divisoria para separar los productos -->
+        <div class="divider-bar"></div>
+        <!-- Nuevo catálogo de productos -->
+        <h2>Nuevo Catálogo de Productos</h2>
+        <section class="products-column">
+            <div class="product">
+                <img src="producto16.jpg" alt="Producto 16">
+                <h3>Lámpara de pie vintage</h3>
+                <p>Precio: $109.99</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="producto17.jpg" alt="Producto 17">
+                <h3>Lámpara colgante elegante</h3>
+                <p>Precio: $159.99</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <img src="producto18.jpg" alt="Producto 18">
+                <h3>Aplique de pared moderno</h3>
+                <p>Precio: $89.99</p>
+                <button>Agregar al Carrito</button>
+            </div>
+        </section>
+    </div>
+    <!-- Ventana Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="productDetails"></div>
+        </div>
+    </div>
+    <!-- Sección de información de la empresa -->
+    <section class="company-info">
+        <h2>Información de la Empresa</h2>
+        <p>Correo: valuziluminacio@hotmail.com</p>
+        <p>Horario: lunes a viernes 9:00am-19:00pm   sábado 9:30am-15:00pm</p>
+        <p>Ubicación: Antonio de Ulloa N26-119, Quito 170129</p>
+        <p>Valuz iluminación es una empresa que se dedica a la comercialización de material eléctrico e iluminación</p>
+        <p>contamos con 20 años de experiencia en el mercado. Nuestros productos son de alta calidad </p>
+        <p>y de marca reconocida, motivo por el cual podemos dar garantía de todo nuestro material. </p>
+        <p>Nuestros precios son competitivos y contamos con servicio a domicilio.</p>
+    </section>
+
+    <!-- Botón de WhatsApp -->
+    <div class="whatsapp-bubble">
+        <a href="https://wa.me/593997528375" target="_blank">
+            <img src="was.png" alt="WhatsApp Icon">
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Valuz Iluminación</p>
+        </div>
+    </footer>
+</body> 
+</html>

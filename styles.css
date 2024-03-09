@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('vaz.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    color: #ffffff; /* Color de texto predeterminado */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el encabezado */
+    color: #ffffff;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    width: 30%;
+}
+
+.category h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.products {
+    margin-top: 20px;
+}
+
+.product {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para cada producto */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.product p {
+    color: #ffffff;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el pie de página */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+.product {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para cada producto */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s; /* Agregar transición en la opacidad */
+}
+
+.product:hover {
+    opacity: 0.7; /* Reducir la opacidad al pasar el mouse sobre el producto */
+}
+.product {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para cada producto */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Agregar transición en la transformación */
+}
+
+.product:hover {
+    transform: scale(1.1); /* Escalar ligeramente al pasar el mouse sobre el producto */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px; /* Tamaño fijo para el logo */
+    height: 80px; /* Tamaño fijo para el logo */
+    border-radius: 50%; /* Hacer que el logo sea un círculo */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
+}
+.logo {
+    width: 60px; /* Tamaño reducido para el logo */
+    height: 60px; /* Tamaño reducido para el logo */
+    border-radius: 50%; /* Hacer que el logo sea un círculo */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+.video-small img {
+    width: 80%; /* Ajusta el ancho de la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+    max-height: 500px; /* Establece una altura máxima para las imágenes */
+    border-radius: 10px; /* Aplica bordes redondeados */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá de los bordes redondeados */
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
