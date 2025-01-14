@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Valuz Iluminación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #333;
+            overflow-x: hidden;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .product-section {
+            position: relative;
+            margin: 50px auto;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-in-out;
+        }
+        .product-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .product-section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .product-section img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .product-info {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-description {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #006d5b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: #00473a;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 4em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            .product-section {
+                flex-direction: column;
+                margin: 20px 10px;
+            }
+            .product-section img {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            .product-title {
+                font-size: 1.5em;
+            }
+            .product-description {
+                font-size: 1.1em;
+            }
+            .home-button {
+                font-size: 1.2em;
+                padding: 15px 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 3em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .product-title {
+                font-size: 1.5em;
+            }
+            .product-description {
+                font-size: 1.1em;
+            }
+            .home-button {
+                font-size: 1.1em;
+                padding: 15px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video de fondo -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="arbolitos.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+
+    <!-- Título -->
+    <header>
+        <div>
+            <h1>Valuz Iluminación</h1>
+            <p>Un árbol con luces puede ser el corazón que ilumina y da vida a cualquier hogar</p>
+        </div>
+    </header>
+
+    <!-- Productos -->
+    <div class="product-section">
+        <img src="arbolitos/1.png" alt="Producto 1">
+        <div class="product-info">
+            <div class="product-title">Este árbol, con su suave resplandor, transforma el espacio en un refugio de tranquilidad, donde cada luz refleja la calma que buscamos para nuestro hogar</div>
+            <div class="product-description">.</div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <img src="arbolitos/2.png" alt="Producto 2">
+        <div class="product-info">
+            <div class="product-title">Las luces que adornan este árbol crean una atmósfera envolvente, llenando cada rincón con serenidad y elegancia, invitando a disfrutar de los pequeños momentos en casa.</div>
+            <div class="product-description"></div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <img src="arbolitos/3.png" alt="Producto 3">
+        <div class="product-info">
+            <div class="product-title">En su simpleza, este árbol ofrece un toque de paz y armonía, transformando cualquier espacio en un rincón acogedor donde la belleza se encuentra en cada detalle.</div>
+            <div class="product-description"></div>
+        </div>
+    </div>
+    <div class="product-section">
+        <img src="arbolitos/4.png" alt="Producto 4">
+        <div class="product-info">
+            <div class="product-title">Las suaves luces que lo adornan nos recuerdan que la belleza de un hogar está en sus detalles, creando un ambiente cálido, relajante y lleno de calma</div>
+            <div class="product-description"></div>
+        </div>
+    </div>
+    <div class="product-section">
+        <img src="arbolitos/5.png" alt="Producto 4">
+        <div class="product-info">
+            <div class="product-title">Este árbol, rodeado de luces brillantes, se convierte en el punto de encuentro de nuestra tranquilidad, aportando un toque de serenidad que llena nuestro hogar de calma y bienestar</div>
+            <div class="product-description"></div>
+        </div>
+    </div>
+    <div class="product-section">
+        <img src="arbolitos/6.png" alt="Producto 4">
+        <div class="product-info">
+            <div class="product-title">Entre sus luces y su presencia, este árbol transforma nuestro hogar en un espacio donde la paz se siente en el aire, haciendo de cada día algo especial.</div>
+            <div class="product-description"></div>
+        </div>
+    </div>
+
+    <!-- Botón para volver a la página de inicio -->
+    <button class="home-button" onclick="window.location.href='index.html';">Volver a Inicio</button>
+
+    <footer>
+        <p>&copy; 2025 Valuz Iluminación. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Detecta cuándo las secciones son visibles en la ventana
+        const sections = document.querySelectorAll('header, .product-section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>

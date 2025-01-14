@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuz Iluminación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- FontAwesome para íconos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            overflow-x: hidden;
+            animation: openGate 2s ease-in-out forwards;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            z-index: 10;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            z-index: 10;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            z-index: 10;
+            animation: fadeIn 4s ease-in-out forwards;
+        }
+
+        /* Animación de la "compuerta" vertical */
+        @keyframes openGate {
+            0% {
+                transform: scaleY(0);
+                transform-origin: top center;
+            }
+            100% {
+                transform: scaleY(1);
+            }
+        }
+
+        /* Animación de desvanecimiento */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Estilos para las redes sociales en la esquina inferior derecha */
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 20;
+        }
+        .social-icons a {
+            margin: 10px;
+            color: white;
+            font-size: 2em;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav {
+                flex-direction: column;
+                top: 120px;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 10px 0;
+            }
+
+            .hero {
+                height: 70vh;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 0;
+            }
+
+            .social-icons a {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Valuz Iluminación</h1>
+    </header>
+    <div class="hero">
+        <video autoplay loop muted>
+            <source src="valuz.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <nav>
+            <a href="foco-led.html">Arbolitos</a>
+            <a href="lampara-moderna.html">Productos led</a>
+            <a href="lampara-mode.html">lamparas</a>
+        </nav>
+    </div>
+    <footer>
+        <p>&copy; 2025 Valuz Iluminación. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Redes sociales en la esquina inferior derecha -->
+    <div class="social-icons">
+        <a href="https://wa.me/0997528375" target="_blank" class="fab fa-whatsapp"></a>
+        <a href="https://www.instagram.com/valu.ziluminacion" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.tiktok.com/@valuziluminacion" target="_blank" class="fab fa-tiktok"></a>
+    </div>
+</body>
+</html>

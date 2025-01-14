@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Paneles LED</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #333;
+            overflow-x: hidden;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            padding: 16px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        .product-section {
+            position: relative;
+            margin: 50px auto;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-in-out;
+        }
+        .product-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .product-section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .product-section img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .product-info {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-description {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #006d5b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: #00473a;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Estilos para pantallas más pequeñas (sin cambios significativos) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 4em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            .product-section {
+                flex-direction: row;
+            }
+            .product-section img {
+                width: 40%;
+                height: auto;
+            }
+            .product-title {
+                font-size: 1.8em;
+            }
+            .product-description {
+                font-size: 1.2em;
+            }
+            .home-button {
+                font-size: 1.2em;
+                padding: 15px 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 3em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .product-title {
+                font-size: 1.8em;
+            }
+            .product-description {
+                font-size: 1.1em;
+            }
+            .home-button {
+                font-size: 1.1em;
+                padding: 15px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="fondo.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+    <nav>
+        <a href="lampara-moderna.html">Inicio</a>
+        <a href="ojo_de_buey.html">Ojo de Buey</a>
+        <a href="reflectores.html">Reflector</a>
+        <a href="focos.html">Focos</a>
+        <a href="apliques.html">Apliques</a>
+        <a href="emergencia.html">Emergencia</a>
+        <a href="paneles.html">Paneles</a>
+    </nav>
+    <header>
+        <div>
+            <h1>PANELES</h1>
+            <p>Ilumina tus espacios con la eficiencia y elegancia de nuestros paneles LED.</p>
+        </div>
+    </header>
+
+    <div class="product-section">
+        <img src="paneles/Panel led empotrable cuadrado blanco.png" alt="Panel LED Empotrable Blanco">
+        <div class="product-info">
+            <div class="product-title">Panel LED Slim 3W</div>
+            <div class="product-description">Ideal para iluminar espacios reducidos con un diseño minimalista.</div>
+        </div>
+    </div>
+    <div class="product-section">
+        <img src="paneles/Panel led sobrepuesto cuadrado blanco.png" alt="Panel LED Sobrepuesto">
+        <div class="product-info">
+            <div class="product-title">Panel LED 6W</div>
+            <div class="product-description">Iluminación potente y eficiente para cualquier estancia.</div>
+        </div>
+    </div>
+    <div class="product-section">
+        <img src="paneles/Panel led empotrable redondo.png" alt="Panel LED 12W">
+        <div class="product-info">
+            <div class="product-title">Panel LED 12W</div>
+            <div class="product-description">Perfecto para iluminar grandes espacios con estilo y eficiencia.</div>
+        </div>
+    </div>
+    <div class="product-section">
+        <img src="paneles/Panel led empotrable vincha ajustable bicolor.png" alt="Panel LED Empotrable Blanco">
+        <div class="product-info">
+            <div class="product-title">Panel LED Slim 3W</div>
+            <div class="product-description">Ideal para iluminar espacios reducidos con un diseño minimalista.</div>
+        </div>
+    </div>
+
+    <button class="home-button" onclick="window.location.href='index.html';">Volver a Inicio</button>
+
+    <footer>
+        <p>&copy; 2025 Valuz Iluminación.</p>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('.product-section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
